@@ -22,7 +22,9 @@ public class Main
 
     static boolean equal(int[] a, int[] b)
     {
-        boolean result = a.length == b.length;
+        if(a.length!=b.length) //Jarmo's correction
+            return false;
+        boolean result = true;
         for (int i = 0; i < a.length; i++)
             if (a[i] != b[i])
             {
